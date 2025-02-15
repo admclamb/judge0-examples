@@ -1,3 +1,6 @@
 .env
 request_body.json
 request_response.json
+output/
+node_modules/
+package-lock.json
