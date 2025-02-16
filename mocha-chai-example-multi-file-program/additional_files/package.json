@@ -1,0 +1,10 @@
+{
+  "type": "module",
+  "script": {
+    "test": "node ./node_modules/mocha/bin/mocha script.js"
+  },
+  "dependencies": {
+    "chai": "^5.2.0",
+    "mocha": "^11.1.0"
+  }
+}

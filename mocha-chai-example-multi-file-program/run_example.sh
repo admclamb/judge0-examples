@@ -6,9 +6,8 @@ source ../.env
 function generate_request_body() {
     cat << EOF
 {
-    "source_code": "$(cat script.js | $JUDGE0_BASE64_CMD -w0 -)",
     "stdin": "$(cat stdin.txt | $JUDGE0_BASE64_CMD -w0 -)",
-    "language_id": 102,
+    "language_id": 89,
     "additional_files": "$(cd additional_files; zip -r - . | $JUDGE0_BASE64_CMD -w0 -)"
 }
 EOF
