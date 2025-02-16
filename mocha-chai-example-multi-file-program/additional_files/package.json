@@ -1,6 +1,6 @@
 {
   "type": "module",
-  "script": {
+  "scripts": {
     "test": "node ./node_modules/mocha/bin/mocha script.js"
   },
   "dependencies": {

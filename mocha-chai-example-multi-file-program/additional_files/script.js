@@ -1,11 +1,4 @@
-import Mocha from "mocha";
 import { expect } from "chai";
-
-const mocha = new Mocha();
-
-// Inject Mocha’s globals into the current scope.
-// This is what normally the mocha CLI does for you.
-mocha.suite.emit("pre-require", global, "", mocha);
 
 function add(a, b) {
   return a + b;
@@ -23,9 +16,4 @@ describe("Calculator Module", () => {
       expect(result).to.be.a("number");
     });
   });
-});
-
-// Run the tests and exit the process with an appropriate code.
-mocha.run((failures) => {
-  process.exitCode = failures ? 1 : 0;
 });
